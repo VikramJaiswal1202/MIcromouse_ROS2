@@ -1,0 +1,8 @@
+source;share/micromouse_description/hook/cmake_prefix_path.ps1
+source;share/micromouse_description/hook/cmake_prefix_path.dsv
+source;share/micromouse_description/hook/cmake_prefix_path.sh
+source;share/micromouse_description/local_setup.bash
+source;share/micromouse_description/local_setup.dsv
+source;share/micromouse_description/local_setup.ps1
+source;share/micromouse_description/local_setup.sh
+source;share/micromouse_description/local_setup.zsh

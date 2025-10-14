@@ -1,0 +1,4 @@
+source;share/micromouse_control/local_setup.bash
+source;share/micromouse_control/local_setup.dsv
+source;share/micromouse_control/local_setup.sh
+source;share/micromouse_control/local_setup.zsh
