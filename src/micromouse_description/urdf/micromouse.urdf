@@ -19,7 +19,7 @@
     </collision>
     <inertial>
       <mass value="0.5"/>
-      <inertia ixx="0.001" iyy="0.001" izz="0.001"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
     </inertial>
   </link>
   <link name="wheel_left">
@@ -36,7 +36,7 @@
     </collision>
     <inertial>
       <mass value="0.05"/>
-      <inertia ixx="0.0001" iyy="0.0001" izz="0.0001"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
     </inertial>
   </link>
   <joint name="wheel_left_joint" type="continuous">
@@ -59,7 +59,7 @@
     </collision>
     <inertial>
       <mass value="0.05"/>
-      <inertia ixx="0.0001" iyy="0.0001" izz="0.0001"/>
+      <inertia ixx="0.0001" ixy="0.0" ixz="0.0" iyy="0.0001" iyz="0.0" izz="0.0001"/>
     </inertial>
   </link>
   <joint name="wheel_right_joint" type="continuous">
@@ -80,6 +80,10 @@
         <cylinder length="0.02" radius="0.005"/>
       </geometry>
     </collision>
+    <inertial>
+      <mass value="0.001"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+    </inertial>
   </link>
   <joint name="ir_front_joint" type="fixed">
     <parent link="base_link"/>
@@ -98,6 +102,10 @@
         <cylinder length="0.02" radius="0.005"/>
       </geometry>
     </collision>
+    <inertial>
+      <mass value="0.001"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+    </inertial>
   </link>
   <joint name="ir_front_left_joint" type="fixed">
     <parent link="base_link"/>
@@ -116,6 +124,10 @@
         <cylinder length="0.02" radius="0.005"/>
       </geometry>
     </collision>
+    <inertial>
+      <mass value="0.001"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+    </inertial>
   </link>
   <joint name="ir_front_right_joint" type="fixed">
     <parent link="base_link"/>
@@ -134,6 +146,10 @@
         <cylinder length="0.02" radius="0.005"/>
       </geometry>
     </collision>
+    <inertial>
+      <mass value="0.001"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+    </inertial>
   </link>
   <joint name="ir_left_joint" type="fixed">
     <parent link="base_link"/>
@@ -152,13 +168,18 @@
         <cylinder length="0.02" radius="0.005"/>
       </geometry>
     </collision>
+    <inertial>
+      <mass value="0.001"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+    </inertial>
   </link>
   <joint name="ir_right_joint" type="fixed">
     <parent link="base_link"/>
     <child link="ir_right"/>
     <origin rpy="0 0 -1.57" xyz="0 -0.05 0.02"/>
   </joint>
-  <!-- ========= Diff Drive Plugin ========= -->
+  <!-- -90 deg -->
+  <!-- ========= Gazebo Diff Drive Plugin ========= -->
   <gazebo>
     <plugin filename="libgazebo_ros_diff_drive.so" name="diff_drive_controller">
       <ros>
@@ -168,13 +189,9 @@
       <updateRate>100.0</updateRate>
       <wheelSeparation>0.08</wheelSeparation>
       <wheelDiameter>0.06</wheelDiameter>
-      <leftJoint>wheel_left</leftJoint>
-      <rightJoint>wheel_right</rightJoint>
+      <leftJoint>wheel_left_joint</leftJoint>
+      <rightJoint>wheel_right_joint</rightJoint>
       <robotBaseFrame>base_link</robotBaseFrame>
     </plugin>
   </gazebo>
-  <inertial>
-    <mass value="0.5"/>
-    <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
-  </inertial>
 </robot>

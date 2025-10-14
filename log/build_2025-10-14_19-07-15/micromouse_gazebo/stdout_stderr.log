@@ -1,0 +1,49 @@
+-- Install configuration: ""
+-- Execute custom install script
+[33mCMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:62 (file):
+  Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow
+  symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.
+  Use the cmake_policy command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+  cmake_install.cmake:46 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/build/.built_by
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/build/COLCON_IGNORE
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/install/.colcon_install_layout
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/install/COLCON_IGNORE
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/install/_local_setup_util_ps1.py
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/install/_local_setup_util_sh.py
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/install/local_setup.bash
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/install/local_setup.ps1
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/install/local_setup.sh
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/install/local_setup.zsh
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/install/setup.bash
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/install/setup.ps1
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/install/setup.sh
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/install/setup.zsh
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/log/COLCON_IGNORE
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/log/build_2025-10-14_18-19-51/events.log
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/log/build_2025-10-14_18-19-51/logger_all.log
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/log/latest/events.log
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/log/latest/logger_all.log
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/log/latest_build/events.log
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/log/latest_build/logger_all.log
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//launch/micromouse.launch.py
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo//worlds/maze.world
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/ament_index/resource_index/package_run_dependencies/micromouse_gazebo
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/ament_index/resource_index/parent_prefix_path/micromouse_gazebo
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo/environment/path.sh
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo/environment/path.dsv
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo/local_setup.bash
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo/local_setup.sh
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo/local_setup.zsh
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo/local_setup.dsv
+-- Symlinking: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo/package.dsv
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/ament_index/resource_index/packages/micromouse_gazebo
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo/cmake/micromouse_gazeboConfig.cmake
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo/cmake/micromouse_gazeboConfig-version.cmake
+-- Up-to-date symlink: /home/vikram/micromouse_ws/install/micromouse_gazebo/share/micromouse_gazebo/package.xml
