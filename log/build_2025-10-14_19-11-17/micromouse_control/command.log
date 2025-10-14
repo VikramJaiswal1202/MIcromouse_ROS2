@@ -1,4 +1,0 @@
-Invoking command in '/home/vikram/micromouse_ws/build/micromouse_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vikram/micromouse_ws/build/micromouse_control -- -j20 -l20
-Invoked command in '/home/vikram/micromouse_ws/build/micromouse_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vikram/micromouse_ws/build/micromouse_control -- -j20 -l20
-Invoking command in '/home/vikram/micromouse_ws/build/micromouse_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vikram/micromouse_ws/build/micromouse_control
-Invoked command in '/home/vikram/micromouse_ws/build/micromouse_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vikram/micromouse_ws/build/micromouse_control

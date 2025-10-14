@@ -310,6 +310,9 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
+# install(DIRECTORY "urdf" "DESTINATION" "share/micromouse_description")
+ament_cmake_symlink_install_directory("/home/vikram/micromouse_ws/src/micromouse_description" DIRECTORY "urdf" "DESTINATION" "share/micromouse_description")
+
 # install(FILES "/home/vikram/micromouse_ws/build/micromouse_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/micromouse_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/vikram/micromouse_ws/src/micromouse_description" FILES "/home/vikram/micromouse_ws/build/micromouse_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/micromouse_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 

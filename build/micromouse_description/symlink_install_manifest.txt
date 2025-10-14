@@ -1,3 +1,5 @@
+/home/vikram/micromouse_ws/install/micromouse_description/share/micromouse_description/urdf/micromouse.urdf
+/home/vikram/micromouse_ws/install/micromouse_description/share/micromouse_description/urdf/micromouse.urdf.xacro
 /home/vikram/micromouse_ws/install/micromouse_description/share/ament_index/resource_index/package_run_dependencies/micromouse_description
 /home/vikram/micromouse_ws/install/micromouse_description/share/ament_index/resource_index/parent_prefix_path/micromouse_description
 /home/vikram/micromouse_ws/install/micromouse_description/share/micromouse_description/environment/ament_prefix_path.sh

@@ -1,0 +1,71 @@
+[0.010s] Invoking command in '/home/vikram/micromouse_ws/build/micromouse_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/vikram/micromouse_ws/src/micromouse_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vikram/micromouse_ws/install/micromouse_control
+[0.049s] -- The C compiler identification is GNU 11.4.0
+[0.087s] -- The CXX compiler identification is GNU 11.4.0
+[0.092s] -- Detecting C compiler ABI info
+[0.141s] -- Detecting C compiler ABI info - done
+[0.149s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.149s] -- Detecting C compile features
+[0.149s] -- Detecting C compile features - done
+[0.152s] -- Detecting CXX compiler ABI info
+[0.216s] -- Detecting CXX compiler ABI info - done
+[0.224s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.224s] -- Detecting CXX compile features
+[0.224s] -- Detecting CXX compile features - done
+[0.226s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.359s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.417s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.435s] -- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)
+[0.467s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.470s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.476s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.486s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.500s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.534s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.536s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.600s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.616s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.647s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.652s] -- Looking for pthread.h
+[0.700s] -- Looking for pthread.h - found
+[0.700s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.747s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.748s] -- Found Threads: TRUE  
+[0.779s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.789s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.801s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.853s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.853s] -- Configured cppcheck include dirs: 
+[0.853s] -- Configured cppcheck exclude dirs and/or files: 
+[0.853s] -- Added test 'lint_cmake' to check CMake code style
+[0.853s] -- Added test 'uncrustify' to check C / C++ code style
+[0.853s] -- Configured uncrustify additional arguments: 
+[0.854s] -- Added test 'xmllint' to check XML markup files
+[0.856s] -- Configuring done
+[0.861s] -- Generating done
+[0.863s] -- Build files have been written to: /home/vikram/micromouse_ws/build/micromouse_control
+[0.870s] Invoked command in '/home/vikram/micromouse_ws/build/micromouse_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/vikram/micromouse_ws/src/micromouse_control -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/vikram/micromouse_ws/install/micromouse_control
+[0.870s] Invoking command in '/home/vikram/micromouse_ws/build/micromouse_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vikram/micromouse_ws/build/micromouse_control -- -j20 -l20
+[0.905s] [ 50%] [32mBuilding CXX object CMakeFiles/micromouse_node.dir/src/micromouse_node.cpp.o[0m
+[5.760s] [100%] [32m[1mLinking CXX executable micromouse_node[0m
+[6.012s] [100%] Built target micromouse_node
+[6.021s] Invoked command in '/home/vikram/micromouse_ws/build/micromouse_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vikram/micromouse_ws/build/micromouse_control -- -j20 -l20
+[6.022s] Invoking command in '/home/vikram/micromouse_ws/build/micromouse_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vikram/micromouse_ws/build/micromouse_control
+[6.026s] -- Install configuration: ""
+[6.026s] -- Execute custom install script
+[6.026s] -- Symlinking: /home/vikram/micromouse_ws/install/micromouse_control/share/ament_index/resource_index/package_run_dependencies/micromouse_control
+[6.031s] -- Symlinking: /home/vikram/micromouse_ws/install/micromouse_control/share/ament_index/resource_index/parent_prefix_path/micromouse_control
+[6.037s] -- Symlinking: /home/vikram/micromouse_ws/install/micromouse_control/share/micromouse_control/environment/ament_prefix_path.sh
+[6.043s] -- Symlinking: /home/vikram/micromouse_ws/install/micromouse_control/share/micromouse_control/environment/ament_prefix_path.dsv
+[6.049s] -- Symlinking: /home/vikram/micromouse_ws/install/micromouse_control/share/micromouse_control/environment/path.sh
+[6.055s] -- Symlinking: /home/vikram/micromouse_ws/install/micromouse_control/share/micromouse_control/environment/path.dsv
+[6.061s] -- Symlinking: /home/vikram/micromouse_ws/install/micromouse_control/share/micromouse_control/local_setup.bash
+[6.065s] -- Symlinking: /home/vikram/micromouse_ws/install/micromouse_control/share/micromouse_control/local_setup.sh
+[6.069s] -- Symlinking: /home/vikram/micromouse_ws/install/micromouse_control/share/micromouse_control/local_setup.zsh
+[6.075s] -- Symlinking: /home/vikram/micromouse_ws/install/micromouse_control/share/micromouse_control/local_setup.dsv
+[6.081s] -- Symlinking: /home/vikram/micromouse_ws/install/micromouse_control/share/micromouse_control/package.dsv
+[6.087s] -- Symlinking: /home/vikram/micromouse_ws/install/micromouse_control/share/ament_index/resource_index/packages/micromouse_control
+[6.093s] -- Symlinking: /home/vikram/micromouse_ws/install/micromouse_control/share/micromouse_control/cmake/micromouse_controlConfig.cmake
+[6.099s] -- Symlinking: /home/vikram/micromouse_ws/install/micromouse_control/share/micromouse_control/cmake/micromouse_controlConfig-version.cmake
+[6.105s] -- Symlinking: /home/vikram/micromouse_ws/install/micromouse_control/share/micromouse_control/package.xml
+[6.112s] -- Symlinking: /home/vikram/micromouse_ws/install/micromouse_control/lib/micromouse_control/micromouse_node
+[6.118s] Invoked command in '/home/vikram/micromouse_ws/build/micromouse_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vikram/micromouse_ws/build/micromouse_control
