@@ -25,3 +25,10 @@ if(BUILD_TESTING)
 endif()
 
 ament_package()
+
+add_executable(micromouse_node src/micromouse_node.cpp)
+ament_target_dependencies(micromouse_node rclcpp geometry_msgs sensor_msgs std_msgs)
+install(TARGETS
+  micromouse_node
+  DESTINATION lib/${PROJECT_NAME})
+

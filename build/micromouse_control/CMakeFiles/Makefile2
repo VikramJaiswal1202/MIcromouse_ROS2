@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/vikram/micromouse_ws/build/micromouse_control
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: CMakeFiles/micromouse_node.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,6 +73,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/micromouse_control_uninstall.dir/clean
+clean: CMakeFiles/micromouse_node.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -126,6 +127,32 @@ micromouse_control_uninstall: CMakeFiles/micromouse_control_uninstall.dir/rule
 CMakeFiles/micromouse_control_uninstall.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/micromouse_control_uninstall.dir/build.make CMakeFiles/micromouse_control_uninstall.dir/clean
 .PHONY : CMakeFiles/micromouse_control_uninstall.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/micromouse_node.dir
+
+# All Build rule for target.
+CMakeFiles/micromouse_node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/micromouse_node.dir/build.make CMakeFiles/micromouse_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/micromouse_node.dir/build.make CMakeFiles/micromouse_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vikram/micromouse_ws/build/micromouse_control/CMakeFiles --progress-num=1,2 "Built target micromouse_node"
+.PHONY : CMakeFiles/micromouse_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/micromouse_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vikram/micromouse_ws/build/micromouse_control/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/micromouse_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/vikram/micromouse_ws/build/micromouse_control/CMakeFiles 0
+.PHONY : CMakeFiles/micromouse_node.dir/rule
+
+# Convenience name for target.
+micromouse_node: CMakeFiles/micromouse_node.dir/rule
+.PHONY : micromouse_node
+
+# clean rule for target.
+CMakeFiles/micromouse_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/micromouse_node.dir/build.make CMakeFiles/micromouse_node.dir/clean
+.PHONY : CMakeFiles/micromouse_node.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

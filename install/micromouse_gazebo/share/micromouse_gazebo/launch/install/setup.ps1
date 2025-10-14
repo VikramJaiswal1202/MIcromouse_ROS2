@@ -1,0 +1,1 @@
+/home/vikram/micromouse_ws/src/micromouse_gazebo/launch/install/setup.ps1

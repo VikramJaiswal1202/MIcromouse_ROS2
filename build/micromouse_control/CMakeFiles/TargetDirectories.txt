@@ -1,5 +1,6 @@
 /home/vikram/micromouse_ws/build/micromouse_control/CMakeFiles/uninstall.dir
 /home/vikram/micromouse_ws/build/micromouse_control/CMakeFiles/micromouse_control_uninstall.dir
+/home/vikram/micromouse_ws/build/micromouse_control/CMakeFiles/micromouse_node.dir
 /home/vikram/micromouse_ws/build/micromouse_control/CMakeFiles/test.dir
 /home/vikram/micromouse_ws/build/micromouse_control/CMakeFiles/edit_cache.dir
 /home/vikram/micromouse_ws/build/micromouse_control/CMakeFiles/rebuild_cache.dir

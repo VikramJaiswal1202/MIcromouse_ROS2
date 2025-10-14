@@ -197,6 +197,43 @@ micromouse_control_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/micromouse_control_uninstall.dir/build.make CMakeFiles/micromouse_control_uninstall.dir/build
 .PHONY : micromouse_control_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named micromouse_node
+
+# Build rule for target.
+micromouse_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 micromouse_node
+.PHONY : micromouse_node
+
+# fast build rule for target.
+micromouse_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/micromouse_node.dir/build.make CMakeFiles/micromouse_node.dir/build
+.PHONY : micromouse_node/fast
+
+src/micromouse_node.o: src/micromouse_node.cpp.o
+.PHONY : src/micromouse_node.o
+
+# target to build an object file
+src/micromouse_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/micromouse_node.dir/build.make CMakeFiles/micromouse_node.dir/src/micromouse_node.cpp.o
+.PHONY : src/micromouse_node.cpp.o
+
+src/micromouse_node.i: src/micromouse_node.cpp.i
+.PHONY : src/micromouse_node.i
+
+# target to preprocess a source file
+src/micromouse_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/micromouse_node.dir/build.make CMakeFiles/micromouse_node.dir/src/micromouse_node.cpp.i
+.PHONY : src/micromouse_node.cpp.i
+
+src/micromouse_node.s: src/micromouse_node.cpp.s
+.PHONY : src/micromouse_node.s
+
+# target to generate assembly for a file
+src/micromouse_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/micromouse_node.dir/build.make CMakeFiles/micromouse_node.dir/src/micromouse_node.cpp.s
+.PHONY : src/micromouse_node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +249,10 @@ help:
 	@echo "... test"
 	@echo "... micromouse_control_uninstall"
 	@echo "... uninstall"
+	@echo "... micromouse_node"
+	@echo "... src/micromouse_node.o"
+	@echo "... src/micromouse_node.i"
+	@echo "... src/micromouse_node.s"
 .PHONY : help
 
 
