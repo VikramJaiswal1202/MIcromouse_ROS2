@@ -7,19 +7,20 @@
   <xacro:property name="wheel_length" value="0.02"/>
   <xacro:property name="robot_length" value="0.12"/>
   <xacro:property name="robot_width" value="0.10"/>
+  <xacro:property name="robot_height" value="0.04"/>
   <xacro:property name="sensor_range" value="0.10"/>
 
   <!-- ========= Base Link ========= -->
   <link name="base_link">
     <visual>
       <geometry>
-        <box size="${robot_length} ${robot_width} 0.04"/>
+        <box size="${robot_length} ${robot_width} ${robot_height}"/>
       </geometry>
       <material name="Blue"/>
     </visual>
     <collision>
       <geometry>
-        <box size="${robot_length} ${robot_width} 0.04"/>
+        <box size="${robot_length} ${robot_width} ${robot_height}"/>
       </geometry>
     </collision>
     <inertial>
@@ -29,7 +30,6 @@
   </link>
 
   <!-- ========= Wheels ========= -->
-  <!-- Left Wheels -->
   <xacro:macro name="wheel" params="name x y z">
     <link name="${name}">
       <visual>
@@ -57,14 +57,11 @@
     </joint>
   </xacro:macro>
 
-  <!-- Left wheels -->
-  <xacro:wheel name="wheel_left_front" x="0.03" y="${wheel_separation/2}" z="-0.02"/>
-  <xacro:wheel name="wheel_left_back" x="-0.03" y="${wheel_separation/2}" z="-0.02"/>
-  <!-- Right wheels -->
-  <xacro:wheel name="wheel_right_front" x="0.03" y="-${wheel_separation/2}" z="-0.02"/>
-  <xacro:wheel name="wheel_right_back" x="-0.03" y="-${wheel_separation/2}" z="-0.02"/>
+  <!-- Left and Right wheels -->
+  <xacro:wheel name="wheel_left" x="0" y="${wheel_separation/2}" z="-0.02"/>
+  <xacro:wheel name="wheel_right" x="0" y="-${wheel_separation/2}" z="-0.02"/>
 
-  <!-- ========= IR Sensors (Ray Sensors) ========= -->
+  <!-- ========= IR Sensors ========= -->
   <xacro:macro name="ir_sensor" params="name x y yaw">
     <link name="${name}">
       <visual>
@@ -73,6 +70,11 @@
         </geometry>
         <material name="Red"/>
       </visual>
+      <collision>
+        <geometry>
+          <cylinder radius="0.005" length="0.02"/>
+        </geometry>
+      </collision>
     </link>
 
     <joint name="${name}_joint" type="fixed">
@@ -84,13 +86,13 @@
 
   <!-- Front Sensors -->
   <xacro:ir_sensor name="ir_front" x="0.06" y="0" yaw="0"/>
-  <xacro:ir_sensor name="ir_front_left" x="0.05" y="0.03" yaw="0.785"/> <!-- 45 deg -->
-  <xacro:ir_sensor name="ir_front_right" x="0.05" y="-0.03" yaw="-0.785"/> <!-- -45 deg -->
+  <xacro:ir_sensor name="ir_front_left" x="0.05" y="0.03" yaw="0.785"/>
+  <xacro:ir_sensor name="ir_front_right" x="0.05" y="-0.03" yaw="-0.785"/>
   <!-- Side Sensors -->
-  <xacro:ir_sensor name="ir_left" x="0" y="0.05" yaw="1.57"/> <!-- 90 deg -->
-  <xacro:ir_sensor name="ir_right" x="0" y="-0.05" yaw="-1.57"/> <!-- -90 deg -->
+  <xacro:ir_sensor name="ir_left" x="0" y="0.05" yaw="1.57"/>
+  <xacro:ir_sensor name="ir_right" x="0" y="-0.05" yaw="-1.57"/>
 
-  <!-- ========= Transmission & Diff Drive Plugin ========= -->
+  <!-- ========= Diff Drive Plugin ========= -->
   <gazebo>
     <plugin name="diff_drive_controller" filename="libgazebo_ros_diff_drive.so">
       <ros>
@@ -100,12 +102,18 @@
       <updateRate>100.0</updateRate>
       <wheelSeparation>${wheel_separation}</wheelSeparation>
       <wheelDiameter>${wheel_radius*2}</wheelDiameter>
-      <leftJoint>wheel_left_front</leftJoint>
-      <rightJoint>wheel_right_front</rightJoint>
-      <leftJoint>wheel_left_back</leftJoint>
-      <rightJoint>wheel_right_back</rightJoint>
+      <leftJoint>wheel_left</leftJoint>
+      <rightJoint>wheel_right</rightJoint>
       <robotBaseFrame>base_link</robotBaseFrame>
     </plugin>
   </gazebo>
+
+  <inertial>
+  <mass value="0.5"/>
+  <inertia ixx="0.001" ixy="0.0" ixz="0.0"
+           iyy="0.001" iyz="0.0"
+           izz="0.001"/>
+</inertial>
+
 
 </robot>
