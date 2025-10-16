@@ -60,10 +60,18 @@
       <axis xyz="1 0 0"/>
     </joint>
   </xacro:macro>
+<!-- Left Wheel -->
+<xacro:wheel name="wheel_left" 
+             x="0" 
+             y="${wheel_separation/2 + wheel_length/2}" 
+             z="-${wheel_radius}" /> 
 
-  <!-- ========= Wheels (1 per side) ========= -->
-  <xacro:wheel name="wheel_left" x="0" y="${wheel_separation/2}" z="-0.02"/>
-  <xacro:wheel name="wheel_right" x="0" y="-${wheel_separation/2}" z="-0.02"/>
+<!-- Right Wheel -->
+<xacro:wheel name="wheel_right" 
+             x="0" 
+             y="-${wheel_separation/2 + wheel_length/2}" 
+             z="-${wheel_radius}" />
+
 
   <!-- ========= IR Sensor Macro ========= -->
   <xacro:macro name="ir_sensor" params="name x y yaw">
